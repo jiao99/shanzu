@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: normal; }
+
+html {
+  background-color: #f5f5f5; }
+
+header {
+  width: 100%;
+  height: 2rem;
+  background-color: #FFAC2C;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.7rem; }
+  header .iconfont {
+    color: white;
+    font-size: 0.8rem; }
+  header p {
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 30%; }
+
+.content {
+  width: 100%; }
+  .content ul {
+    width: 100%; }
+    .content ul .content-t {
+      width: 100%;
+      height: 1.45rem; }
+      .content ul .content-t a {
+        font-size: 0.4rem;
+        margin-left: 1rem;
+        color: #d4d4d4;
+        line-height: 1.45rem; }
+    .content ul .content-c {
+      width: 100%;
+      height: 1.9rem;
+      background-color: white; }
+      .content ul .content-c a {
+        margin-left: 0.65rem;
+        color: #dddddd; }
+      .content ul .content-c input {
+        width: 13.5rem;
+        height: 1.8rem;
+        border: 1px solid white; }
+    .content ul .content-b .sub {
+      margin-top: 0.8rem;
+      width: 90%;
+      padding: 0 0.7rem 0 0.7rem; }
+      .content ul .content-b .sub .btn {
+        background-color: #fed555;
+        border: none;
+        padding: 0.5rem 0 0.5rem 0;
+        border-radius: 5px;
+        width: 100%; }
+        .content ul .content-b .sub .btn a {
+          font-size: 0.7rem;
+          color: white; }
+
+/*# sourceMappingURL=mi4.css.map */

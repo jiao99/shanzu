@@ -1,0 +1,71 @@
+header{
+    width: 16rem;
+    height: 8.25rem;
+    background: linear-gradient(to bottom,#f17f02,20%,#f8a507);
+    text-align: center;
+    margin-bottom: 2.25rem;
+    nav{
+        
+        padding: 2%;
+        a{
+            color: #fff;
+            float: right;
+            font-size: 0.7rem;
+        }
+    }
+    img{
+        width: 6.35rem;
+        height: 3.85rem;
+        margin-top: 1.5rem;
+    }
+}
+.from{
+   
+    div{
+        width: 14.65rem;
+        height: 2.2rem;
+        margin:0 auto;
+        border-bottom: 1px solid #eeeeee;
+        line-height: 2.2rem;
+        i{
+            font-size: 0.8rem;
+            color: #dfdfdf;
+        }
+        img{
+            width: 0.625rem;
+            height: 0.725rem;
+            vertical-align: middle;
+        }
+        input{
+            width: 70%;
+            height: 100%;
+            vertical-align: middle;
+            margin-left: 0.45rem;
+//          border: none;
+        }
+        input::placeholder{
+            color: #c6c4c9;
+        }
+    }
+    form{
+        width: 14.65rem;
+        margin:1.45rem auto;
+        input{
+        width: 14.65rem;
+        height: 2.2rem;
+        border-radius: 2rem;
+        background: #ffd974;
+        color: #fff;
+        font-size: 0.75rem;
+        border: none;
+     }
+    }
+    
+}
+.forgetpassword{
+    text-align: center;
+    margin-top: 8.575rem;
+}
+.forgetpassword>a{
+   color: #ffcf50;
+}

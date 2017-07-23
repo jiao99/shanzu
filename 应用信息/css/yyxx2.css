@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+header {
+  width: 100%;
+  height: 3rem;
+  background: #FEAC24; }
+  header ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3rem; }
+  header li a {
+    color: white;
+    font-size: 1.2rem; }
+  header li:nth-child(1) {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold; }
+  header li:nth-child(3) {
+    font-size: 1rem;
+    margin-right: 0.5rem; }
+
+.content {
+  width: 100%; }
+  .content .content-list1 {
+    width: 100%;
+    display: flex; }
+    .content .content-list1 div:nth-child(1) {
+      width: 30%; }
+    .content .content-list1 img {
+      width: 60%;
+      position: relative;
+      top: 1rem;
+      left: 1rem; }
+    .content .content-list1 div:nth-child(2) p:nth-child(1) {
+      position: relative;
+      top: 1.3rem;
+      color: #FF610C;
+      font-size: 1.3rem; }
+      .content .content-list1 div:nth-child(2) p:nth-child(1) span {
+        color: darkgray;
+        font-size: 0.85rem; }
+    .content .content-list1 div:nth-child(2) p:nth-child(2) {
+      position: relative;
+      top: 1.6rem;
+      color: darkgray;
+      font-size: 0.85rem; }
+  .content .content-list2 {
+    margin-top: 2rem;
+    width: 100%;
+    height: 11rem;
+    background: #F5F5F5;
+    display: none; }
+    .content .content-list2 div {
+      position: relative;
+      top: 1rem; }
+      .content .content-list2 div p {
+        padding: 0.4rem 1.3rem; }
+      .content .content-list2 div p:nth-child(1) {
+        font-size: 0.8rem;
+        color: darkgray; }
+        .content .content-list2 div p:nth-child(1) span {
+          color: #4F4F4F; }
+      .content .content-list2 div p:nth-child(2) {
+        font-size: 0.8rem;
+        color: darkgray; }
+        .content .content-list2 div p:nth-child(2) span {
+          color: #4F4F4F; }
+      .content .content-list2 div p:nth-child(3) {
+        font-size: 0.8rem;
+        color: darkgray; }
+        .content .content-list2 div p:nth-child(3) span {
+          color: #4F4F4F; }
+      .content .content-list2 div p:nth-child(4) {
+        color: #FF610C;
+        font-size: 0.8rem; }
+      .content .content-list2 div p:nth-child(5) {
+        color: #FF610C;
+        font-size: 0.8rem; }
+        .content .content-list2 div p:nth-child(5) span {
+          margin-left: 2.6rem; }
+  .content .kong {
+    margin-top: 2rem;
+    width: 100%;
+    height: 0.8rem;
+    background: #F5F5F5;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray; }
+  .content .kong1 {
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+    background: #F5F5F5;
+    border-top: 1px solid lightgray; }
+
+/*# sourceMappingURL=yyxx2.css.map */

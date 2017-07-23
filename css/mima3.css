@@ -1,0 +1,64 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+html, body {
+  background-color: #F5F5F5;
+  font-family: "微软雅黑"; }
+
+header {
+  width: 100%;
+  height: 2rem;
+  background-color: #FFAC2C;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.7rem; }
+  header .iconfont {
+    color: white;
+    font-size: 0.8rem; }
+  header p {
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 30%; }
+
+.text {
+  width: 100%; }
+  .text p {
+    font-size: 0.7rem;
+    margin: 0.7rem 0 0.5rem 0.7rem; }
+  .text .input-val {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0.6rem 0.7rem 0.6rem; }
+    .text .input-val input {
+      width: 80%;
+      font-size: 0.7rem; }
+    .text .input-val .iconfont:first-child {
+      font-size: 0.8rem;
+      color: #D6D6D6; }
+    .text .input-val .iconfont:last-child {
+      color: #D6D6D6;
+      font-size: 0.8rem; }
+  .text .sub {
+    margin-top: 0.8rem;
+    width: 100%;
+    padding: 0 0.7rem 0 0.7rem; }
+    .text .sub .btn {
+      background-color: #fed555;
+      border: none;
+      padding: 0.5rem 0 0.5rem 0;
+      border-radius: 5px;
+      width: 100%; }
+      .text .sub .btn a {
+        font-size: 0.7rem;
+        color: white; }
+
+/*# sourceMappingURL=mima3.css.map */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/base1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/chongzhi.css"/>
+		<link rel="stylesheet" type="text/css" href="../js/dist/font-awesome/css/font-awesome.css"/>
+		<script src="../js/dist/js/rem.js"></script>
+		<script src="../js/dist/js/zepto.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="clear">
+				<a href="#" onClick="javascript :history.back(-1)" >
+					<i class="fa fa-sw fa-angle-left"></i>
+				</a>
+				 <p>忘记密码</p>
+			</nav>
+		</header>
+		<p class="h1">重置你的登录密码</p>
+		<div class="from">
+			<div>
+				<img src="../img/password1.png" alt="" />
+				<input type="password" placeholder="请输入6-14位的登录密码" class="phone"/>
+			    <img src="../img/yey.png" alt=""  class="eye"/>
+			</div>
+			<form>
+				<input type="button" value="确定" class="btn"/>
+			</form>	
+		</div>
+		<div class="bg"></div>
+		<div class="box">
+			<div class="alert clear">
+		     <h1></h1>
+		     <div class="height"></div>
+		     <input type="button" value="确定" class="btn2"/>
+		</div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$(".btn").on("tap",function(){
+				$('.box').show()
+				$('.bg').show()
+				var val = $('.phone').val()
+				var str = /^\w{6,14}$/
+				if(val==''){
+					$('.alert h1').html("密码不能为空")
+				}else if(!str.test($(".phone").val())){
+					 $('.alert h1').html("密码格式不正确")
+				}else{
+					 $('.alert h1').html("重置密码成功，请重新登录")
+					 $(".btn2").on("tap",function(){
+				       window.location.href="../index.html"
+			})
+				}
+				
+			})
+			
+			$(".btn2").on("tap",function(){
+				$('.box').hide()
+				$('.bg').hide()
+			})
+		    var i=0
+		    $('.eye').on('click',function(){
+		    	 i++
+		    	 if(i%2==0){
+		    	 	$('.phone').attr('type','text')		
+		    	 }else if(i%2!=0){
+		    	 	$('.phone').attr('type','password')	
+		    	 }
+		    })
+		})
+	</script>
+</html>

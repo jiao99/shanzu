@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/mi7.css"/>
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<script src="../js/jquery-1.7.2.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="#" class="icon iconfont icon-fanhui1"></a>
+			<p>手机验证</p>
+		</header>
+		<div class="content">
+			<ul>
+				<li class="content-t"><a href="#">请输入原登录密码验证身份</a></li>
+				<li class="content-c">
+					<a href="javascript:;"class="content-c-1"><span class="iconfont icon-mima"></span></a>
+					<input type="password" placeholder="原登录密码" class="inp" />
+					<a href="javascript:;"class="content-c-2"><span class="iconfont icon-click"></span></a>
+				</li>
+				<li class="content-b">
+					<div class="content-q"><a href="#">确定</a></div>
+					<div class="alert-b">
+						<p class="pp">登录密码设置成功!</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		var eye = 1;
+		$(".content-c-2").click(function(){
+		eye++;
+		if(eye%2==0){
+			$(".inp").prop('type','text');
+			$(".content-c-2").css('color','red');
+		}else{
+			$(".inp").prop('type','password');
+			$(".content-c-2").css('color','#cccccc');
+		}
+	})
+		$(".content-q").click(function(){
+			
+			if ($(".inp").val()=="") {
+				$(".content-q").attr('disabled',false)
+				$(".content-q").css("background","#FED555")
+			} else{
+				$(".content-q").attr('disabled',true)
+				$(".content-q").css("background","#FFAC2C")
+				$(".alert-b").css("display","block")
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/base1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/forgetpassword.css"/>
+		<link rel="stylesheet" type="text/css" href="../js/dist/font-awesome/css/font-awesome.css"/>
+		<script src="../js/dist/js/rem.js"></script>
+		<script src="../js/dist/js/zepto.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="clear">
+				<a href="#" onClick="javascript :history.back(-1)" >
+					<i class="fa fa-sw fa-angle-left"></i>
+				</a>
+				 <p>忘记密码</p>
+			</nav>
+		</header>
+		<p class="h1">请输入你收到的验证码</p>
+		<div class="from">
+			<div>
+				<img src="../img/msg.png" alt="" />
+				<input type="text" placeholder="验证码" class="phone"/>
+				<span class="time"></span>
+			</div>
+			<form>
+				<input type="button" value="下一步" class="btn" onClick="window.location.href='chongzhimima.html'"/>
+			</form>	
+		</div>
+		    
+		</div>
+		
+	</body>
+	<script>
+	 var i=60
+	 var timer = setInterval(function(){
+	 	i--
+ 	  if(i==0){
+	 		clearInterval(timer)
+	 	}
+	 	$('.time').html(i+"s")
+	 },1000)
+	
+	</script>
+</html>

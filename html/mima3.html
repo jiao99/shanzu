@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录密码验证</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mima3.css"/>
+	</head>
+	<body>
+		<header>
+			<a href="#" class="icon iconfont icon-fanhui1"></a>
+			<p>登录密码验证</p>
+		</header>
+		<div class="text">
+			<p>请输入原登录密码验证身份</p>
+			<div class="input-val">
+				<a href="#" class="icon iconfont icon-mima"></a>
+				<input type="password" placeholder="输入原登录密码" class="inp" value=""/>
+				<a href="#" class="icon iconfont icon-click eye"></a>
+			</div>
+			<div class="sub">
+				<button class="btn" disabled><a href="mi4.html">确认</a></button>
+			</div> 
+		</div>
+	</body>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		(function(win, doc) {
+			//浏览器缩放时
+			win.onresize = function() {
+				change();
+			};
+			change();
+			function change() {
+				var oFs = doc.documentElement.clientWidth / (320 / 20);
+				//设置根目录字体大小
+				doc.documentElement.style.fontSize = oFs + 'px';
+			}
+		})(window, document); 
+		
+		 var eye = 1;
+		$(".eye").click(function(){
+			eye++;
+			if(eye%2==0){
+				$(".inp").prop('type','text');
+				$(".eye").css('color','red');
+			}else{
+				$(".inp").prop('type','password');
+				$(".eye").css('color','#D6D6D6');
+			}
+		})
+		
+//		密码框为空时候,确定按钮不能点
+		$(".inp").blur(function(){
+			console.log($(".inp").val().length)
+			if ($(".inp").val()=="") {
+				$(".btn").attr('disabled',false)
+				$(".btn").css("background","#FED555")
+			} else{
+				$(".btn").attr('disabled',true)
+				$(".btn").css("background","#FFAC2C")
+			}
+		})
+	</script>
+</html>

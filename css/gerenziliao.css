@@ -1,0 +1,109 @@
+@import url(reset.css);
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: ''; }
+
+header {
+  text-align: center;
+  font-size: 1rem;
+  background: #FFAC2C;
+  color: white;
+  position: relative;
+  line-height: 2rem; }
+  header span {
+    font-size: 0.8rem;
+    color: white; }
+  header em {
+    position: absolute;
+    left: 0.7rem;
+    top: 0.6rem; }
+    header em img {
+      width: 0.6rem;
+      height: 0.85rem;
+      display: block; }
+
+.logo {
+  background: #FFAC2C; }
+  .logo .logo-left {
+    width: 7.95rem;
+    float: left;
+    height: 3.3rem;
+    border-right: 0.05rem solid #f5f5f5; }
+    .logo .logo-left p {
+      width: 2.625rem;
+      float: left;
+      margin-left: 0.8rem; }
+      .logo .logo-left p img {
+        width: 100%; }
+    .logo .logo-left .logo-left-div1 {
+      float: right;
+      width: 4rem;
+      font-size: 0.6rem;
+      margin-top: 0.4rem; }
+      .logo .logo-left .logo-left-div1 span {
+        margin-top: 0.4rem; }
+        .logo .logo-left .logo-left-div1 span a {
+          color: white;
+          font-size: 0.7rem; }
+      .logo .logo-left .logo-left-div1 a span {
+        display: block;
+        background: #FFC801;
+        color: white;
+        width: 2.85rem;
+        height: 0.85rem;
+        padding: 0.05rem 0.2rem;
+        line-height: 0.85rem;
+        border-radius: 2px; }
+        .logo .logo-left .logo-left-div1 a span img {
+          width: 0.4rem;
+          height: 0.6rem;
+          display: inline-block; }
+  .logo .logo-right {
+    width: 7.95rem;
+    float: left;
+    height: 3.3rem;
+    text-align: end; }
+    .logo .logo-right span {
+      background: rgba(255, 255, 255, 0.3);
+      font-size: 0.7rem;
+      color: #F85828;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      margin-right: 1rem;
+      margin-top: 0.6rem;
+      display: inline-block; }
+
+main .main-wans {
+  background: #F5F5F5;
+  padding: 0.6rem 0 0.6rem 0.7rem;
+  font-size: 0.7rem; }
+  main .main-wans a {
+    color: #ccc; }
+main .main-ul-box {
+  font-size: 0.7rem; }
+  main .main-ul-box li {
+    padding: 0.6rem 0.7rem 0.6rem 0.7rem;
+    border-bottom: 0.05rem solid #ccc; }
+    main .main-ul-box li span {
+      float: left; }
+    main .main-ul-box li a {
+      float: right;
+      color: #ccc; }
+      main .main-ul-box li a b {
+        margin-left: 0.4rem; }
+  main .main-ul-box li:nth-of-type(2) a em {
+    color: #000; }
+  main .main-ul-box li:nth-of-type(3) a em {
+    color: #000; }
+main input {
+  background: #FED555;
+  color: white;
+  width: 14.6rem;
+  border: none;
+  margin-left: 0.7rem;
+  height: 1.85rem;
+  margin-top: 1.5rem;
+  font-size: 0.7rem; }
+
+/*# sourceMappingURL=gerenziliao.css.map */

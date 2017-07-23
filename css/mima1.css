@@ -1,0 +1,103 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+html, body {
+  background-color: #F5F5F5;
+  font-family: "微软雅黑"; }
+
+header {
+  width: 100%;
+  height: 2rem;
+  background-color: #FFAC2C;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.7rem; }
+  header .iconfont {
+    color: white;
+    font-size: 0.8rem; }
+  header p {
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 30%; }
+
+.xinxi {
+  margin-top: 0.8rem;
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.7rem 0 0.7rem; }
+  .xinxi .l-xinxi {
+    display: flex; }
+    .xinxi .l-xinxi img {
+      width: 1.8rem;
+      height: 1.8rem; }
+    .xinxi .l-xinxi p {
+      font-size: 0.7rem;
+      margin-left: 0.5rem; }
+      .xinxi .l-xinxi p button {
+        border: none;
+        border-radius: 5px;
+        background-color: #FFC801;
+        text-align: center;
+        padding: 0.2rem; }
+        .xinxi .l-xinxi p button a {
+          color: white;
+          font-size: 0.5rem;
+          line-height: 0.8rem; }
+  .xinxi .r-xinxi span {
+    color: #FFAC2C;
+    font-size: 0.7rem; }
+    .xinxi .r-xinxi span a {
+      margin-left: 0.7rem;
+      font-size: 0.7rem;
+      color: #DCDCDC;
+      font-weight: bold; }
+
+.list {
+  margin-top: 0.8rem;
+  width: 100%;
+  height: 3.8rem;
+  background-color: white; }
+  .list ul {
+    width: 100%;
+    height: 100%; }
+    .list ul li {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #EAEAEA;
+      padding: 0 0.7rem 0 1rem; }
+      .list ul li:last-child {
+        border-bottom: 1px solid #EAEAEA; }
+      .list ul li p {
+        font-size: 0.7rem; }
+      .list ul li a {
+        font-size: 0.7rem;
+        color: #DCDCDC;
+        font-weight: bold; }
+
+.quit {
+  margin-top: 0.7rem;
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; }
+  .quit a {
+    font-size: 0.7rem; }
+
+/*# sourceMappingURL=mima1.css.map */

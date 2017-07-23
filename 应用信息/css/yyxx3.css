@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  background: #FA5A29; }
+  header ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3rem; }
+  header li {
+    color: white;
+    font-size: 1.2rem; }
+  header li:nth-child(1) {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold; }
+  header .nav-bo {
+    width: 100%;
+    display: flex;
+    background: #FA5A29;
+    height: 4.5rem; }
+    header .nav-bo div {
+      width: 50%; }
+      header .nav-bo div img {
+        width: 50%;
+        position: relative;
+        top: 0.6rem;
+        left: 2.5rem; }
+      header .nav-bo div p {
+        color: #FCD890;
+        font-size: bold; }
+      header .nav-bo div p:nth-child(1) {
+        position: relative;
+        top: 0.8rem; }
+      header .nav-bo div p:nth-child(2) {
+        position: relative;
+        top: 1.3rem;
+        left: -0.8rem; }
+
+.content {
+  width: 100%; }
+  .content .content-list1 {
+    width: 100%;
+    background: #F5F5F5; }
+    .content .content-list1 p {
+      padding: 0.8rem;
+      color: darkgray; }
+  .content .content-list2 {
+    width: 100%; }
+    .content .content-list2 ul {
+      display: flex;
+      border-bottom: 1px solid #DBDBDB;
+      justify-content: space-between;
+      padding: 0.8rem; }
+      .content .content-list2 ul li:nth-child(1) span {
+        color: #F85A2A;
+        position: relative;
+        top: -0.2rem; }
+      .content .content-list2 ul li:nth-child(2) {
+        color: darkgray;
+        font-size: 0.9rem; }
+        .content .content-list2 ul li:nth-child(2) span {
+          font-weight: bold; }
+  .content .content-list3 {
+    width: 100%; }
+    .content .content-list3 ul {
+      display: flex;
+      border-bottom: 1px solid #DBDBDB;
+      justify-content: space-between;
+      padding: 0.8rem; }
+      .content .content-list3 ul li:nth-child(1) {
+        position: relative;
+        left: 0.5rem; }
+      .content .content-list3 ul li:nth-child(2) {
+        color: darkgray;
+        font-size: 0.9rem; }
+        .content .content-list3 ul li:nth-child(2) span {
+          font-weight: bold; }
+  .content .content-list4 {
+    width: 100%;
+    background: #F5F5F5; }
+    .content .content-list4 p {
+      padding: 0.8rem;
+      color: darkgray; }
+      .content .content-list4 p span {
+        font-size: 0.65rem;
+        color: #F85A2A; }
+  .content .content-list5 {
+    width: 100%;
+    background: #F5F5F5;
+    height: 6rem; }
+    .content .content-list5 button {
+      width: 90%;
+      height: 2.5rem;
+      background: #FED555;
+      border: none;
+      border-radius: 3%;
+      color: white;
+      font-size: 1.1rem;
+      position: relative;
+      top: 1rem;
+      left: 1rem; }
+
+/*# sourceMappingURL=yyxx3.css.map */

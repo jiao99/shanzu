@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: normal; }
+
+html {
+  background-color: #f5f5f5; }
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #ffac2c;
+  display: flex; }
+  .header .header-l {
+    margin-left: 0.45rem;
+    font-size: 0.8rem;
+    color: white;
+    line-height: 80px; }
+  .header .header-c {
+    padding-left: 4rem;
+    color: white;
+    line-height: 80px; }
+
+.content {
+  width: 100%; }
+  .content ul {
+    width: 100%; }
+    .content ul .content-t {
+      width: 100%;
+      height: 1.45rem; }
+      .content ul .content-t a {
+        font-size: 0.5rem;
+        margin-left: 1rem;
+        color: #d4d4d4;
+        line-height: 1.45rem; }
+    .content ul .content-c {
+      width: 100%;
+      height: 1.9rem;
+      background-color: white; }
+      .content ul .content-c .content-c-1 {
+        margin-left: 0.5rem;
+        color: #dddddd; }
+      .content ul .content-c .content-c-2 {
+        margin-left: 0.5rem;
+        color: #dddddd;
+        font-size: 1rem; }
+      .content ul .content-c .inp {
+        width: 12rem;
+        height: 1.8rem;
+        border: 1px solid white;
+        font-size: 0.8rem; }
+    .content ul .content-b {
+      width: 90%;
+      height: 3rem;
+      background-color: #fed555;
+      margin-left: 0.8rem;
+      margin-top: 1.1rem;
+      text-align: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+      .content ul .content-b a {
+        font-size: 0.8rem;
+        color: white;
+        line-height: 3rem; }
+
+/*# sourceMappingURL=mi6.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>手机验证</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mima5.css"/>
+	</head>
+	<body>
+		<header>
+			<a href="#" class="icon iconfont icon-fanhui1"></a>
+			<p>手机验证</p>
+		</header>
+		<div class="yanzheng">
+			<p>验证短信已发送到手机号为：</p>
+			<p class="tel">18612341524</p>
+			<div class="input-val">
+				<a href="#" class="icon iconfont icon-mima"></a>
+				<input type="text" placeholder="输入手机验证码" class="inp" />
+				<input type="button" id="send" value="发送验证码" />
+			</div>
+			<div class="sub">
+				<button class="btn"><a href="#">确定</a></button>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		(function(win, doc) {
+			//浏览器缩放时
+			win.onresize = function() {
+				change();
+			};
+			change();
+			function change() {
+				var oFs = doc.documentElement.clientWidth / (320 / 20);
+				//设置根目录字体大小
+				doc.documentElement.style.fontSize = oFs + 'px';
+			}
+		})(window, document);
+		
+		$(".inp").blur(function(){
+			console.log($(".inp").val().length)
+			if ($(".inp").val()=="") {
+				$(".btn").attr('disabled',false)
+				$(".btn").css("background","#FED555")
+			} else{
+				$(".btn").attr('disabled',true)
+				$(".btn").css("background","#FFAC2C")
+			}
+		})
+//		手机号
+		var str=$(".tel").text();
+		var str1=str.slice(3,7);
+		$(".tel").text(str.replace(str1,"****"))
+		
+//		发送验证码
+		window.onload=function(){
+			var send=document.getElementById("send");
+			times=60;
+			timer=null;
+			send.onclick=function(){
+//				计时开始
+				var that=this;
+				this.disabled=true;
+				timer=setInterval(function(){
+					times--;
+					that.value=times+"秒后重试";
+					if(times<=0){
+						that.disabled=false;
+						that.value="发送验证码";
+						clearInterval(timer);
+						times=60;
+					}
+				},1000)
+			}
+		}
+	</script>
+</html>
